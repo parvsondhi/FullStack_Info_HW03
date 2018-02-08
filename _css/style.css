@@ -1,0 +1,24 @@
+header {
+	background-color: #026aa7;
+	height: 30px;
+	text-align: center;
+	padding: 5px 8px;
+}
+
+header a {
+	height: 30px;
+	width: 80px;
+	text-align: center;
+	background-image: url(https://a.trellocdn.com/dist/images/header-logo-2x.01ef898811a879595cea.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	display: inline-block;
+	background-size: 80px 30px;
+}
+
+body {
+	background-color: #0078c0;
+	margin: 0px;
+}
+
+/* Add Your CSS */

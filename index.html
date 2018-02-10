@@ -34,26 +34,40 @@ Extra Credit (4 pts):
 
 </head>
     <body>
-            <header>
-                <a href="https://trello.com"></a>
-            </header>
+        <header>
+            <a href="https://trello.com"></a>
+        </header>
 
-            <section>
-                <!-- create input tag for user input -->
-                <input id="todo-item-input">
+        <section>
+            <!-- create input tag for user input -->
+            <input id="todo-item-input">
 
-                <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
 
+            <!-- button takes input and adds a new element with content to 'list_do' -->
+            <button id="new-item" type="text"> Add item </button>
+            
+            <div id="board">
 
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
+                
+                <div class="column" id="list_todo_container">
+                    <h1><b>To Do</b></h1>
+                    <div id = "list_todo">
+                    </div>
+                </div>
+                <div class="column" id="list_doing_container">
+                    <h1><b>Doing</b></h1>
+                    <div id = "list_doing">
 
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
-            </section>
-
-            <script type="text/javascript" src="_js/main.js"> </script>
+                    </div>
+                </div>
+                <div class="column" id="list_done_container">
+                    <h1><b>Done</b></h1>
+                    <div id = "list_done">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="_js/main.js"> </script>
     </body>
 </html>

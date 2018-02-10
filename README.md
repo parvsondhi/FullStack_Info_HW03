@@ -22,5 +22,5 @@ b. The ‘Doing’ item appears at the top of the ‘To Do’ list with the same
 #Extra Credit (4 pts):
 1. Add a 'Done' section
 2. User can move items from the 'Doing' list to the 'Done' list
-3. User can move itesm from the 'Done' list to the 'Doing' list
+3. User can move items from the 'Done' list to the 'Doing' list
 4. Items on the 'Done' list should be styled differently than those on the ‘To Do’ and 'Doing' lists as an additional visual indication of their completion. 

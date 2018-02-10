@@ -2,10 +2,14 @@ $(document).ready(
     $("#new-item").on('click', function() {
         // once the document loads, create new item with this function
         var user_input = $('#todo-item-input').val();
-        // console.log(user_input);
-        $('#list_todo').prepend('<div class = "card"><div class = "description">' + user_input 
+        if (user_input == "") {
+            alert("Please write something.");
+        } else {
+            $('#list_todo').prepend('<div class = "card"><div class = "description">' + user_input 
             + '</div><button class="clickRight"><img src="icon_right.svg" alt="Icon"></button>');
-    })
+            $('#todo-item-input').val('');
+        }
+    })  
 );
 
 $(document).on('click', '.clickRight', function() {

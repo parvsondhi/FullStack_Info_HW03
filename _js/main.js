@@ -20,4 +20,8 @@ $("#list_todo").on('click', "button", function() {
 
 $("#list_doing").on('click', "button", function() {
         // move back from list_doing container to list_todo container
+        $(this).html("JK not done");
+
+        var incompleteItem = $(this).parent()
+        $("#list_todo").prepend(incompleteItem);
 });

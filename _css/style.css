@@ -1,3 +1,12 @@
+body, html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-color: #0078c0;
+	margin: 0px;
+}
+
 header {
 	background-color: #026aa7;
 	height: 30px;
@@ -15,10 +24,137 @@ header a {
 	display: inline-block;
 	background-size: 80px 30px;
 }
-
-body {
-	background-color: #0078c0;
-	margin: 0px;
+/* Add Your CSS */
+.input-container, 
+.list-container {
+	margin: 20px;
 }
 
-/* Add Your CSS */
+#new-item-button {
+	padding: 10px;
+	height: 33px;
+	background-color: #12a6ff;
+	color: white;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 5px 5px 5px rgba(0,0,0, 0.1);
+}
+
+#new-item-button:hover {
+	outline: none;
+	cursor: pointer;
+	box-shadow: 6px 6px 5px rgba(0,0,0, 0.15);
+} 
+
+#todo-item-input {
+	width: 100%;
+	max-width: 400px;
+	height: 33px;
+	margin-left: 20px;
+	background-color: transparent;
+	color: white;
+	border: none;
+	border-bottom: 1px solid #026aa7;
+}
+
+#todo-item-input:focus {
+	outline: none;
+}
+
+.list-container h2 {
+	margin: 5px;
+	font-size: 16pt;
+}
+
+.todo-list {
+	vertical-align: top;
+	background-color: #dddddd;
+	display: inline-block;
+	width: 30%;
+	max-width: 300px;
+	border-radius: 2px;
+	box-shadow: 5px 5px 5px rgba(0,0,0, 0.1);
+}
+
+.todo-list li {
+	list-style: none;
+	margin: 5%;
+	width: calc(90% - 20px);
+	min-height: 60px;
+	background-color: white;
+	padding: 10px;
+	border-radius: 2px;
+	box-shadow: 5px 5px 5px rgba(0,0,0, 0.1);
+}
+
+.todo-list li div {
+	display: inline-block;
+	width: calc(100% - 60px);
+	vertical-align: top;
+	min-height: 60px;
+}
+
+.todo-list li .actions {
+	display: block;
+	height: 20px;
+	font-size: 10pt;
+	text-align: right;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.todo-list li .actions.hidden {
+	opacity: 0;
+	cursor: unset;
+}
+
+.todo-list li button {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	margin-right: 10px;
+	margin-top: 8px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #12a6ff;
+	color: white;
+	border: none;
+	box-shadow: 2px 2px 5px rgba(0,0,0, 0.1);
+}
+
+.todo-list li button.start {
+	background-image: url("../_assets/icon-start.svg");
+	background-position: center;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	fill: white;
+}
+
+.todo-list li button.finish {
+	background-image: url("../_assets/icon-check.svg");
+	background-position: center;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	fill: white;
+}
+
+.todo-list li button.reopen {
+	background-image: url("../_assets/icon-check.svg");
+	background-position: center;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	fill: white;
+
+	background-color: lightgrey;
+	cursor: unset;
+}
+
+.todo-list #list_done li span:not(.actions) {
+	text-decoration: line-through;
+}
+
+.todo-list div:not(#list_done) li button:hover {
+	outline: none;
+	cursor: pointer;
+	box-shadow: 3px 3px 5px rgba(0,0,0, 0.15);
+} 

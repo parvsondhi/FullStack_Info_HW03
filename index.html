@@ -29,6 +29,7 @@ Extra Credit (4 pts):
 <head>
 
     <title> HW03 Javascript and jQuery </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="_css/style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
@@ -39,19 +40,30 @@ Extra Credit (4 pts):
             </header>
 
             <section>
-                <!-- create input tag for user input -->
-                <input id="todo-item-input">
+                <div class="input-container">
+                    <!-- button takes input and adds a new element with content to 'list_do' -->
+                    <button id="new-item-button"> Add Item </button>
 
-                <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+                    <!-- create input tag for user input -->
+                    <input id="todo-item-input">
+                </div>
 
 
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
-
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
+                <div class="list-container">
+                    <div class="todo-list">
+                        <h2> To Do </h2>
+                        <div id="list_todo"></div>
+                    </div>
+                    <div class="todo-list">
+                        <h2> Doing </h2>
+                        <div id="list_doing"> </div>
+                    </div>
+                    <div class="todo-list">
+                        <h2> Done </h2>
+                        <div id="list_done"> </div>
+                    </div>
+                </div>
             </section>
 
             <script type="text/javascript" src="_js/main.js"> </script>

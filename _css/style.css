@@ -17,8 +17,108 @@ header a {
 }
 
 body {
+	font-family: Arial;
 	background-color: #0078c0;
 	margin: 0px;
 }
 
 /* Add Your CSS */
+
+section {
+	padding: 30px;
+}
+
+h1 {
+	font-size: 23px;
+	padding-left: 6px;
+}
+
+input[id=todo-item-input] {
+	color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #cfcfcf;
+    width: 20%;
+    height: 30px;
+}
+
+input[id=todo-item-input]:focus {
+    border-bottom: 1px solid #38e37c;
+    outline: none;
+}
+
+button[id=new-item] {
+    background-color: #279ec1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button[id=listbutton] {
+    background-color: #279ec1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button[id=done] {
+    background-color: #279ec1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+li {
+	background-color: #fff;
+	height: 50px;
+	list-style: none;
+	margin: 5px;
+	vertical-align: center;
+}
+
+#additem {
+	display: block;
+	margin-bottom: 30px;
+}
+
+#todo {
+	display: inline-block;
+	width: 30%;
+	margin-right: 1em;
+	background-color: #cfcfcf;
+	padding: 0px 5px;
+	vertical-align: top;
+}
+
+#doing {
+	display: inline-block;
+	width: 30%;
+	margin-right: 1em;
+	background-color: #cfcfcf;
+	padding: 0px 5px;
+	vertical-align: top;
+}
+
+#done {
+	display: inline-block;
+	width: 30%;
+	background-color: #cfcfcf;
+	padding: 0px 5px;
+	vertical-align: top;
+}
+
+#list_todo {
+
+}
+
+#list_doing {
+}

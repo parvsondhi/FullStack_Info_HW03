@@ -29,29 +29,75 @@ Extra Credit (4 pts):
 <head>
 
     <title> HW03 Javascript and jQuery </title>
+    
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <!-- My CSS -->
     <link rel="stylesheet" href="_css/style.css">
+    
+    
+    <!-- My JS -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Materialize JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
 
 </head>
     <body>
             <header>
-                <a href="https://trello.com"></a>
+                <div class="nav-wrapper">
+                    <a class="brand-logo" href="https://trello.com"></a>
+                </div>
+
+                <!-- <div class="nav-wrapper">
+                  <a href="#" class="brand-logo">Logo</a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                  </ul>
+                </div> -->
+
             </header>
 
             <section>
-                <!-- create input tag for user input -->
-                <input id="todo-item-input">
-
+                
                 <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+                <a class="waves-effect waves-light btn" id="new-item">Add item</a>
 
+                <!-- create input tag for user input -->
+                <div class="input-field col s6" class="button-reg" id="input-item">
+                  <input placeholder="New item"  type="text" class="validate" id="todo-item-input">
+                </div>
+
+            </section>
+                <!-- <input class="input-field col s6" id="todo-item-input"> -->
+
+                
 
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
+            <section>
 
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
+                <!-- <div class="'row' 'col s12 m6' 'card blue-grey darken-1' 'card-content white-text'">
+                    
+                </div> -->
+
+
+
+                <div class="card orange darken-1">    
+                    <h4> To Do </h4>
+                    <div id="list_todo"> </div>
+                </div>
+
+                <div class="card orange darken-3">
+                    <h4> Doing </h4>
+                    <div id="list_doing"> </div>
+                </div>
+
+                <div class="card deep-orange darken-4">
+                    <h4> Done </h4>
+                    <div id="list_done"> </div>
+                </div>
+
             </section>
 
             <script type="text/javascript" src="_js/main.js"> </script>

@@ -6,8 +6,10 @@ $(document).ready(
             return;
         }
         
-        var new_entry = $("<li>").html(user_input).append("<button class='move-right'> Move right </button>").prepend("<button class='move-left'> Move left </button>");
-        
+        var new_entry = $("<li>")
+        new_entry.html(" " + user_input + " ");
+        new_entry.append("<input class='move-right' type='image' src='images/move_right.png' alt='Move Right' width='16px'>");
+        new_entry.prepend("<input class='move-left' type='image' src='images/move_left.png' alt='Move Left' width='16px'>");
         new_entry.find(".move-left").hide();
         
         $('#list-todo').prepend(new_entry);
@@ -40,11 +42,11 @@ $(".column").on('click', '.move-left', function () {
     getPrevColumn(completed_item).find(".column-entries").prepend(completed_item);
 });
 
-function getNextColumn(element) {
+function getNextColumn (element) {
     return getColumn(element).next();
 }
 
-function getPrevColumn(element) {
+function getPrevColumn (element) {
     return getColumn(element).prev();
 }
 

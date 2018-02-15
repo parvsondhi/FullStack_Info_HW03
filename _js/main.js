@@ -4,7 +4,7 @@ $(document).ready(
         var user_input = $('#todo-item-input').val();
         // alert(user_input);
 
-        $('#list_todo').prepend("<li> <button> Move me! </button>" + user_input + "</li>");
+        $('#list_todo').prepend("<li> <button> MARK AS COMPLETE </button>" + user_input + "</li>");
     })
 );
 

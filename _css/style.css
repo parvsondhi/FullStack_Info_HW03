@@ -22,3 +22,7 @@ body {
 }
 
 /* Add Your CSS */
+
+.card-text {
+	word-break:break-word;
+}

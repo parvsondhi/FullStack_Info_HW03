@@ -26,34 +26,52 @@ Extra Credit (4 pts):
 -->
 
 <html>
-<head>
+    <head>
+        <title> HW03 Javascript and jQuery </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="_css/style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    </head>
+    <header>
+        <a href="https://trello.com"></a>
+    </header>
+    <body class="container">
+        <section>
+            <div class="row input-field">
+                <button button class="btn waves-effect waves-light" type="input" name="action" id="new-item">Add Item</button>
+                <input class="col s4" id="todo-item-input">
+            </div>
 
-    <title> HW03 Javascript and jQuery </title>
-    <link rel="stylesheet" href="_css/style.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
-</head>
-    <body>
-            <header>
-                <a href="https://trello.com"></a>
-            </header>
-
-            <section>
-                <!-- create input tag for user input -->
-                <input id="todo-item-input">
-
-                <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
-
-
+            <div class="row">
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
+                <div class="col s6 z-depth-1 grey lighten-3">
+                    <h4>To Do</h4>
+                    <div class="col s12" id="list_todo">
 
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
-            </section>
+                    </div>
+                </div>
+                <div class="col s6 z-depth-1 grey lighten-3">
+                    <h4>Doing</h4>
+                    <div class="col s12" id="list_doing">
+                        <div class="card">
+                            <div class="row card-content black-text valign-wrapper">
+                                <div class="col s2 card-icon">
+                                    <a class="btn-floating btn-medium waves-effect waves-light blue">
+                                        <i class="material-icons">arrow_back</i>
+                                    </a>
+                                </div>
+                                <div class="col s10">
+                                    <p class="card-text">Hialaasdfasdffasdfasdfasfadfgdssdfsddfasdff</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <script type="text/javascript" src="_js/main.js"> </script>
+        <script type="text/javascript" src="_js/main.js"> </script>
     </body>
 </html>

@@ -38,28 +38,28 @@ Extra Credit (4 pts):
                 <a href="https://trello.com"></a>
             </header>
 
-            <section class="search">
+            <div class="search">
                 <!-- create input tag for user input -->
                 <input id="todo-item-input">
-                
+
                 <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Add item </button>
-            </section>
-            <section class="lists">
+                <button id="new-item"> Add item (and change color!)</button>
+            </div>
+            <div class="lists">
 
 
 
                 <!-- ability to move items between list_todo and list_doing -->
                 <div class="listdiv">
                     <h1> To Do </h1>
-                    <div id="list_todo"> </div>
+                    <div><ol id="list_todo"></ol> </div>
                 </div>
 
                 <div class="listdiv">
                     <h1> Doing </h1>
-                    <div id="list_doing"> </div>
+                    <div><ol id="list_doing"></ol> </div>
                 </div>
-            </section>
+            </div>
 
             <script type="text/javascript" src="_js/main.js"> </script>
     </body>

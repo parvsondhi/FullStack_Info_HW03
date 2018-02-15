@@ -1,5 +1,5 @@
 html, body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	margin:auto;
 }
 
@@ -32,6 +32,7 @@ body {
 	margin-left: 20px;
 	display: block;
 	padding-bottom: 200px;
+	display: block;
 }
 
 #todo-item-input{
@@ -60,6 +61,7 @@ body {
 	display: inline-block;
 	margin-right: 20px;
 	padding-left: 20px;
+	padding-bottom: 50px;
 }
 
 .listdiv h1{
@@ -72,10 +74,25 @@ body {
 	width: 100%;
 	position: absolute;
 	top: 150;
+	display: inline-block;
+}
 
+li{
+	list-style-type:none;
+	margin-bottom: 20px;
+}
+
+.item {
+	background-color: white;
+	width: 90%;
+	box-shadow: 2px 2px 2px gray;
+	padding-left: 5px;
+	padding-top: 5px;
 }
 
 .libtn {
-	background-color: #d3d3d3;
-	margin-bottom: 20px;
+	background-color: #fff;
+	font-size: 20px;
+	border: 0px white;
+	margin-bottom: 10px;
 }

@@ -1,8 +1,16 @@
+html{
+	font-family: sans-serif;
+}
+
 header {
 	background-color: #026aa7;
 	height: 30px;
 	text-align: center;
 	padding: 5px 8px;
+}
+
+section{
+	text-align:center;
 }
 
 header a {
@@ -19,6 +27,46 @@ header a {
 body {
 	background-color: #0078c0;
 	margin: 0px;
+}
+h1 {
+    margin: 2px;
+}
+
+#list_todo{
+	background: #fccccc;
+}
+#list_todo ul{
+	color: #870000;
+}
+#list_doing{
+	background: #fce0cc;
+}
+
+#list_doing ul{
+	color: #994204;
+}
+
+#list_done{
+	background: #ccfcd0;
+}
+
+#list_done ul{
+	color: #006608;
+	text-decoration: line-through;
+}
+
+.list{
+	top: 0px;
+	position: relative;
+	width: 30%;
+	display: inline-block;
+	border-radius: 5px;
+	margin: 0px 5px 5px 0px;
+	padding: 10px;
+	background: white;
+}
+.list{
+	text-align: left;
 }
 
 /* Add Your CSS */

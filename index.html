@@ -28,7 +28,7 @@ Extra Credit (4 pts):
 <html>
 <head>
 
-    <title> HW03 Javascript and jQuery </title>
+    <title> To Do List </title>
     <link rel="stylesheet" href="_css/style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
@@ -39,19 +39,24 @@ Extra Credit (4 pts):
             </header>
 
             <section>
-                <!-- create input tag for user input -->
-                <input id="todo-item-input">
-
-                <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
-
-
-                <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
-
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
+                <br/>
+                <div>
+                    <input id="todo-item-input">
+                    <button id="new-item"> Add task </button>
+                </div>
+                <br/>
+                <div id="list_todo" class='list'>
+                    <h1> To Do </h1>
+                    <ul></ul>
+                </div>
+                <div id="list_doing" class='list'>
+                    <h1> Doing </h1>
+                    <ul></ul>
+                </div> 
+                <div id="list_done" class='list'>
+                    <h1> Done </h1>
+                    <ul></ul>
+                </div>
             </section>
 
             <script type="text/javascript" src="_js/main.js"> </script>

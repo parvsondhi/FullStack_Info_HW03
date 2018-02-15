@@ -43,15 +43,24 @@ Extra Credit (4 pts):
                 <input id="todo-item-input">
 
                 <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+                <button id="new-item"> Create Card! </button>
 
 
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
-
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
+                <div class="flex-container">
+                    <div class="flex-box list">
+                        <h1> To Do </h1>
+                        <div id="list_todo"> </div>
+                    </div>
+                    <div class="flex-box list">
+                        <h1> Doing </h1>
+                        <div id="list_doing"> </div>
+                    </div>
+                    <div class="flex-box list">
+                        <h1> Done </h1>
+                        <div id="list_done"> </div>
+                    </div>
+                </div>
             </section>
 
             <script type="text/javascript" src="_js/main.js"> </script>

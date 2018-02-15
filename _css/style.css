@@ -22,3 +22,69 @@ body {
 }
 
 /* Add Your CSS */
+
+body {
+	width: 100%;
+}
+
+section {
+	margin: 0px 20px;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+	display: flex;
+	align-items: flex-start;
+}
+.flex-box {
+	width: 33%;
+}
+
+.list {
+	flex: 1 auto;
+	background-color: #eeeeee;
+	color: black;
+	padding: 0px 10px;
+	/* border: 1px grey solid; */
+	box-shadow: 1px 1px 1px 1px grey;
+	border-radius: 3px;
+}
+
+.card {
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-color {
+	background-color: white;
+}
+
+.doing-color {
+	background-color: rgb(175, 231, 175);
+}
+
+.done-color {
+	background-color: rgb(104, 172, 133);
+
+}
+
+button {
+	margin-right: 10px;
+	padding: 5px 10px;
+	font-size: 10px;
+	border-radius: 5px;
+}
+input {
+	margin: 20px 5px;
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	border-bottom: 2px white solid;
+	color: white;
+	font-size: 14px;
+}

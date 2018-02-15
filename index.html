@@ -22,13 +22,13 @@ Extra Credit (4 pts):
 1. Add a 'Done' section
 2. User can move items from the 'Doing' list to the 'Done' list
 3. User can move itesm from the 'Done' list to the 'Doing' list
-4. Items on the 'Done' list should be styled differently than those on the ‘To Do’ and 'Doing' lists as an additional visual indication of their completion. 
+4. Items on the 'Done' list should be styled differently than those on the ‘To Do’ and 'Doing' lists as an additional visual indication of their completion.
 -->
 
 <html>
 <head>
 
-    <title> HW03 Javascript and jQuery </title>
+    <title> Trello: Project Management Made Easy </title>
     <link rel="stylesheet" href="_css/style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
@@ -40,19 +40,41 @@ Extra Credit (4 pts):
 
             <section>
                 <!-- create input tag for user input -->
-                <input id="todo-item-input">
-
                 <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
-
+                <div class='new-task-input'>
+                    <button id="new-item" class='add-item-button'> ADD ITEM </button>
+                    <input id="todo-item-input" class="add-item-field">
+                </div>
+              </section>
 
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
+              <section class='task-kanban'>
+                <container>
+                  <div class='category-title shadow' id='header'>
+                    <h1> To Do </h1>
+                    <container>
+                      <div class='category'><div id='list_todo'> </div></div>
+                    </container>
+                  </div>
 
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
-            </section>
+                  <div class='category-title shadow' id='header'>
+                      <h1> Doing </h1>
+                      <container>
+                        <div class='category'><div id='list_doing'> </div></div>
+                      </container>
+                  </div>
+
+                  <div class='category-title shadow'  id='header'>
+                      <h1> Done </h1>
+                      <container>
+                        <div class='category'><div id='list_done'> </div></div>
+                      </container>
+                  </div>
+
+                
+                </container>
+
+              </section>
 
             <script type="text/javascript" src="_js/main.js"> </script>
     </body>

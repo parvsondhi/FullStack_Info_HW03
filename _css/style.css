@@ -1,24 +1,55 @@
+
+* {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 header {
 	background-color: #026aa7;
 	height: 30px;
 	text-align: center;
 	padding: 5px 8px;
+	margin: 0px;
 }
 
 header a {
-	height: 30px;
-	width: 80px;
+	/* height: 30px;
+	width: 80px; */
+	height: 10px;
 	text-align: center;
 	background-image: url(https://a.trellocdn.com/dist/images/header-logo-2x.01ef898811a879595cea.png);
 	background-repeat: no-repeat;
 	text-align: center;
 	display: inline-block;
-	background-size: 80px 30px;
+	background-size: 80px 50px;
+}
+
+h1 {
+	color: black;
+	margin: 10px;
+	display: inline-block;
+}
+
+h2,h3 { 
+	margin: 10px
 }
 
 body {
-	background-color: #0078c0;
+	background-color: white;
 	margin: 0px;
 }
 
-/* Add Your CSS */
+#todo-item-input { 
+	margin: 10px; 
+}
+
+#list_todo { 
+	display: inline-block;
+	color: black;
+}
+
+#list_doing { 
+	display: inline-block;
+	color: blue;
+}
+
+

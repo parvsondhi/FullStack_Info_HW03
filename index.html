@@ -31,29 +31,42 @@ Extra Credit (4 pts):
     <title> HW03 Javascript and jQuery </title>
     <link rel="stylesheet" href="_css/style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
     <body>
-            <header>
-                <a href="https://trello.com"></a>
-            </header>
+        <header>
+            <a href="https://trello.com"></a>
+        </header>
 
-            <section>
+        <section>
+            <div id="new-item-bar">
                 <!-- create input tag for user input -->
-                <input id="todo-item-input">
+                <input id="new-item-input">
 
                 <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+                <button id="new-item"> Add Item </button>
+            </div>
 
-
+            <div class="all-columns">
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
+                <div class="column">
+                    <h1 class="column-header"> To Do </h1>
+                    <div class="column-entries" id="list-todo"> </div>
+                </div>
 
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
-            </section>
+                <div class="column">
+                    <h1 class="column-header"> Doing </h1>
+                    <div class="column-entries" id="list-doing"> </div>
+                </div>
 
-            <script type="text/javascript" src="_js/main.js"> </script>
+                <div class="column">
+                    <h1 class="column-header"> Done </h1>
+                    <div class="column-entries" id="list-done"> </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="_js/main.js"> </script>
     </body>
 </html>

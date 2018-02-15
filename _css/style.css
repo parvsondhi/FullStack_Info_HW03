@@ -67,16 +67,6 @@ button[id=listbutton] {
     cursor: pointer;
 }
 
-button[id=done] {
-    background-color: #279ec1;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 10px;
-    cursor: pointer;
-}
-
 li {
 	background-color: #fff;
 	height: 50px;
@@ -114,11 +104,4 @@ li {
 	background-color: #cfcfcf;
 	padding: 0px 5px;
 	vertical-align: top;
-}
-
-#list_todo {
-
-}
-
-#list_doing {
 }

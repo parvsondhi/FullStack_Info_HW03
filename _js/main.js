@@ -8,7 +8,7 @@ $(document).ready(
     })
 );
 
-$("#list_todo").on('click', "button", "listbutton", function() {
+$("#list_todo").on('click', "button", function() {
         // move from list_todo container to list_doing container
         // console.log($(this).parent());
         $(this).html("Add To To-Do");
@@ -18,7 +18,7 @@ $("#list_todo").on('click', "button", "listbutton", function() {
 });
 
 
-$("#list_doing").on('click', "button", "listbutton", function() {
+$("#list_doing").on('click', "button", function() {
         // move back from list_doing container to list_todo container
        $(this).html("Move me!");
 

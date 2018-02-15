@@ -19,6 +19,66 @@ header a {
 body {
 	background-color: #0078c0;
 	margin: 0px;
+	font-family: Verdana;
+
 }
 
 /* Add Your CSS */
+
+#input_block {
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+#list {
+	display: inline-block;
+}
+
+#todo_block {
+	float: left;
+	margin-top: 25px;
+	margin-left: 50px;
+	width: 400px;
+	background-color: rgb(255, 240, 152);
+	padding-left: 10px;
+
+}
+
+#doing_block {
+	float: right;
+	margin-top: 25px;
+	width: 400px;
+	padding-left: 10px;
+	background-color: rgba(155, 195, 255, 0.877);  
+}
+
+#new-item {
+	background-color: #00A0F5;
+	border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-size: 16px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#todo-item-input{
+	border: none;
+	height: 26px;
+	width: 200px;
+}
+
+#instructions {
+	width: 600px;
+	color: white;
+	margin-left: 50px;
+}
+
+h2{
+	font-size: 30px;
+	color: white;
+	margin-left: 50px;
+	
+}

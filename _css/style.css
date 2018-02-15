@@ -22,3 +22,36 @@ body {
 }
 
 /* Add Your CSS */
+.column {
+    display: inline-block;
+    vertical-align: top;
+    margin: 2px;
+    width: 31%;
+/*    TODO: remove later:   */
+    border: 1px solid grey;
+}
+
+.column-header {
+/*    text-align: center;*/
+}
+
+.column-entries {
+    text-align: left;
+}
+
+.all-columns {
+    text-align: center;
+}
+
+#new-item-bar {
+    text-align: center;
+    margin: 10px;
+}
+
+#new-item-input {
+    font-size: 20px;
+}
+
+#new-item {
+    font-size: 20px;
+}

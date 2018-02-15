@@ -35,23 +35,30 @@ Extra Credit (4 pts):
 </head>
     <body>
             <header>
-                <a href="https://trello.com"></a>
+                <!--<a href="https://trello.com"></a> -->
+                <a> Task Lists </a>
             </header>
-
+            <section>
+                <h2>Hey there!</h2>
+                <h3>Feel free to use this to do list to organize your life. Type in a task and press add item to move it to your To Do list. Click 'Start' to move it to your Doing List and 'Later' to move it back to your To Do List.</h3>
+            </section>
             <section>
                 <!-- create input tag for user input -->
                 <input id="todo-item-input">
 
                 <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+                <button id="new-item"> Add item! </button>
 
 
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
-
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
+                <div>
+                    <div id="lists">
+                        <h1> To Do </h1>
+                        <div id="list_todo"> </div>
+                        <h1> Doing </h1>
+                        <div id="list_doing"> </div>
+                    </div>
+                </div>
             </section>
 
             <script type="text/javascript" src="_js/main.js"> </script>

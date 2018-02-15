@@ -19,6 +19,56 @@ header a {
 body {
 	background-color: #0078c0;
 	margin: 0px;
+	font-family: 'Georgia';
+}
+
+body button{
+	border-radius: 4px;
+	padding: 8px 38px;
+	font-size: 12px;
 }
 
 /* Add Your CSS */
+#todo-item-input{
+	height: 38px;
+}
+
+#new-item {
+	border-radius: 2px;
+	background-color: #FDB515;
+  color: white;
+	padding: 10px 50px;
+	font-size: 14px;
+	vertical-align: middle;
+}
+
+#new-item:hover {
+	background-color: white;
+  color: #FDB515;
+}
+
+.list_ {
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+	font-size: 16px;
+}
+
+#list_title {
+	background-color: white;
+	text-align: center;
+	vertical-align: top;
+	height: auto;
+}
+
+#list_todo{
+	background-color: #00B0DA;
+}
+
+#list_doing {
+	background-color: #EE1F60;
+}
+
+#list_done {
+	background-color: #CFDD45;
+}

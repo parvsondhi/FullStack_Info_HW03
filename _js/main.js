@@ -4,7 +4,7 @@ $(document).ready(
         var user_input = $('#todo-item-input').val();
         // alert(user_input);
 
-        $('#list_todo').prepend("<li> <button> Move me! </button>" + user_input + "</li>");
+        $('#list_todo').prepend("<li> <button> Add to Doing </button>" + user_input + "</li>");
     })
 );
 
@@ -15,9 +15,15 @@ $("#list_todo").on('click', "button", function() {
         $(this).html("Add To To-Do");
 
         var completedItem = $(this).parent()
-        $("#list_doing").prepend(completedItem);
+        $('#list_doing').prepend(completedItem);
 });
 
 $("#list_doing").on('click', "button", function() {
         // move back from list_doing container to list_todo container
+
+        $(this).html("Add to Doing");
+
+        var todoItem = $(this).parent()
+        $('#list_todo').prepend(todoItem);
+
 });

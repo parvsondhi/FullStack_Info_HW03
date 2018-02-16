@@ -30,6 +30,7 @@ Extra Credit (4 pts):
 
     <title> HW03 Javascript and jQuery </title>
     <link rel="stylesheet" href="_css/style.css">
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 </head>
@@ -37,23 +38,23 @@ Extra Credit (4 pts):
             <header>
                 <a href="https://trello.com"></a>
             </header>
+                
+            <div id="input">
+                <button id="new-item"> Add Item </button>
+                <input id="todo-item-input">   
+            </div>
 
-            <section>
-                <!-- create input tag for user input -->
-                <input id="todo-item-input">
-
-                <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
-
-
-                <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
-
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
-            </section>
-
+            <div>
+                 <section>
+                    <h1> To Do </h1>
+                    <div id="list_todo"> </div>
+                </section>
+                
+                <section >
+                    <h1> Doing </h1>
+                    <div id="list_doing"> </div>
+                </section>
+            </div>
             <script type="text/javascript" src="_js/main.js"> </script>
     </body>
 </html>

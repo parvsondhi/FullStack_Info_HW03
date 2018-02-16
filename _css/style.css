@@ -22,3 +22,31 @@ body {
 }
 
 /* Add Your CSS */
+
+body > h2 {
+	letter-spacing: 2px;
+}
+
+body > h3 {
+	letter-spacing: 1px;
+}
+
+#list_todo li {
+	font-family: Helvetica;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+#list_todo > li button {
+	background-color: #5f0;
+}
+
+#list_todo li {
+	font-family: 'Times New Roman';
+	font-size: 25px;
+}
+
+li button {
+	font-size: 15px;
+	margin-right: 10px;
+}

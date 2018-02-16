@@ -30,30 +30,34 @@ Extra Credit (4 pts):
 
     <title> HW03 Javascript and jQuery </title>
     <link rel="stylesheet" href="_css/style.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
 </head>
     <body>
-            <header>
-                <a href="https://trello.com"></a>
-            </header>
+        <header>
+            <a href="https://trello.com"></a>
+        </header>
 
-            <section>
-                <!-- create input tag for user input -->
-                <input id="todo-item-input">
-
-                <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+        <section>
+            <!-- create input tag for user input -->
+            <input type="text" id="task">
 
 
-                <!-- ability to move items between list_todo and list_doing -->
+            <!-- button takes input and adds a new element with content to 'list_do' -->
+            <button id="new-item"> Add a card </button>
+
+
+            <!-- ability to move items between list_todo and list_doing -->
+            <div class="column" id="to-do">
                 <h1> To Do </h1>
-                <div id="list_todo"> </div>
+                <li id="todo-list"></li>
+            </div>
 
+            <div class="column" id="doing">
                 <h1> Doing </h1>
-                <div id="list_doing"> </div>
-            </section>
+                <li id="doing-list"></li>
+            </div>
 
-            <script type="text/javascript" src="_js/main.js"> </script>
+        </section>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="_js/main.js"> </script>
     </body>
 </html>

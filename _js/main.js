@@ -20,12 +20,24 @@ $("#list_todo").on('click', "button", function() {
         $("#list_doing").prepend(completedItem);
 });
 
+
 $("#list_doing").on('click', "button", function() {
         // move back from list_doing container to list_todo container
         // $(this).html("JK not done");
         $(this).removeClass("doing");
-        $(this).addClass("to_do");
+        $(this).addClass("done");
 
         var incompleteItem = $(this).parent()
-        $("#list_todo").prepend(incompleteItem);
+        $("#list_done").prepend(incompleteItem);
+});
+
+
+$("#list_done").on('click', "button", function() {
+        // move back from list_doing container to list_todo container
+        // $(this).html("JK not done");
+        $(this).removeClass("done");
+        $(this).addClass("doing");
+
+        var incompleteItem = $(this).parent()
+        $("#list_doing").prepend(incompleteItem);
 });

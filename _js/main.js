@@ -4,9 +4,8 @@ $(document).ready(
         var user_input = $('#todo-item-input').val();
         // alert(user_input);
 
-        $('#list_todo').prepend("<li> <button id='doing'> Add to Doing </button> <button id='done'> Add to Done </button>"  + " " + user_input+ " "+  "</li>");
-        $('#list_todo').addClass("class_todo");
-        $('#list_todo #done').hide();
+        $('#list_todo').prepend("<li> <button id='doing'> Add to Doing </button>"  + " " + user_input+ " "+  "</li>");
+        
         // $('#list_todo').prepend("<img src='asset/checkbox.png'>");
 
     })
@@ -20,7 +19,6 @@ $("#list_todo").on('click', "button", function() {
         var completedItem = $(this).parent()
         // $("#list_doing").prepend(completedItem);
         completedItem.attr('src', 'asset/uncheck.png');
-        $("#list_doing").addClass("class_doing")
         // $("#list_doing").prepend("<img src='asset/checkbox.png'>")
         $("#list_doing").prepend(completedItem);
         $('#list_doing #done').show().css("background-color", "green");

@@ -19,6 +19,78 @@ header a {
 body {
 	background-color: #0078c0;
 	margin: 0px;
+    font-family: sans-serif;
 }
 
-/* Add Your CSS */
+/*Add a card button*/
+#new-item {
+    position: relative;
+    left: 40px;
+    top: 20px;
+    font-family: sans-serif;
+    padding: 4px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+/*User input*/
+#task {
+    position: relative;
+    left: 25px;
+    top: 20px;
+    height: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 4px;
+    padding-left: 4px;
+}
+
+.column {
+    background-color: #E3E3E3;
+    min-height: 75px;
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    vertical-align: top;
+    top: 75px;
+    right: 287px; 
+    border-radius: 5px;
+}
+
+.column h1 {
+    font-size: 20px;
+    padding-left: 10px;
+    position: relative;
+    color: #393939;
+    margin: 5px;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 8px;
+    text-indent: 10px;
+}
+
+li.addedTask {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 15px;
+    width: 83%;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+/*Cards in the todo list*/
+#started {
+  float: left;
+  border-radius: 6px;
+  border: none;
+}
+.mark button {
+  background-color: #3BE897;
+}
+.unmark button {
+  background-color: #E65C5C;
+}

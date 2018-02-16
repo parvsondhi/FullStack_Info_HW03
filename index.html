@@ -40,18 +40,31 @@ Extra Credit (4 pts):
 
             <section>
                 <!-- create input tag for user input -->
-                <input id="todo-item-input">
+                <div id="topbar">
+                    <!-- button takes input and adds a new element with content to 'list_do' -->
+                    <button id="new-item"> ADD ITEM </button>
 
-                <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+                    <input id="todo-item-input">
+                </div>
 
 
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
+                <div id='cols'>
+                    <div class="col">
+                        <h1 id="todo-title"> To Do </h1>
+                        <div id="list_todo"> </div>
+                    </div>
 
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
+                    <div class="col">
+                        <h1 id='doing-title'> Doing </h1>
+                        <div id="list_doing"> </div>
+                    </div>
+
+                    <div class="col">
+                        <h1 id='done-title'> Done </h1>
+                        <div id="list_done"> </div>
+                    </div>
+                </div>    
             </section>
 
             <script type="text/javascript" src="_js/main.js"> </script>

@@ -43,15 +43,20 @@ Extra Credit (4 pts):
                 <input id="todo-item-input">
 
                 <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+                <button id="new-item"> Add item </button>
 
+                <div id="content">
+                    <!-- ability to move items between list_todo and list_doing -->
+                    <div id="todo-column" class="task-column">
+                        <h1> To Do </h1>
+                        <div id="list_todo"> </div>
+                    </div>
 
-                <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
-
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
+                    <div id="doing-column" class="task-column">
+                        <h1> Doing </h1>
+                        <div id="list_doing"> </div>
+                    </div>
+                </div>
             </section>
 
             <script type="text/javascript" src="_js/main.js"> </script>

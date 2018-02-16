@@ -22,3 +22,21 @@ body {
 }
 
 /* Add Your CSS */
+#list_todo button{
+	color: white;
+	background-color: black;
+}
+
+/*#list_doing img{
+	display: inline-block;
+}
+*/
+#list_doing button{
+	color: white;
+	background-color: red;
+}
+
+#list_done button{
+	color: white;
+	background-color: pink;
+}

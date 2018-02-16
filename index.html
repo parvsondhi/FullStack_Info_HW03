@@ -3,6 +3,7 @@
 2. User can add one ‘To Do’ item at a time using a text input field and an ‘Add Item’ button.
 3. Each newly-added ‘To Do’ item appears at the top of the ‘To Do’ list (not the bottom).
 4. User can click a button within each ‘To Do’ item to mark it as complete, at which point:
+IMPORTANT
 a. The ‘To Do’ item disappears from the ‘To Do’ list
 b. The ‘To Do’ item appears at the top of the ‘Doing’ list.
 c. Items on the ‘Doing’ list should be styled differently than those on the ‘To Do’ list as an additional visual indication of their completion.
@@ -28,7 +29,7 @@ Extra Credit (4 pts):
 <html>
 <head>
 
-    <title> HW03 Javascript and jQuery </title>
+    <title> Trello: Project management made easy. </title>
     <link rel="stylesheet" href="_css/style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
@@ -40,18 +41,39 @@ Extra Credit (4 pts):
 
             <section>
                 <!-- create input tag for user input -->
-                <input id="todo-item-input">
+                <input type="text" id="todo-item-input" name="task">
 
                 <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+                <div class=taskadder>
+                    <button id="new-item"> Add to task</button>
+                </div>
 
-
+            </section>
+            <section class = "tasks_section">
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
+                <container>
+                <div class="thirds" id="header">
+                    <h1> To Do </h1> 
+                                  
+                
+                </div>
+                <div class="thirds" id="header">
+                    <h1> Doing </h1>
 
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
+                </div>
+                <div class="thirds"  id="header">
+                    <h1> Done </h1>
+                </div>     
+
+      </div>
+
+                <container>
+                <div class="thirds"><div id="list_todo"> </div></div>  
+                <div class="thirds"><div id="list_doing"></div></div>     
+                <div class="thirds"><div id="list_done"></div></div>
+                </container>   
+                </div>
+            </container>    
             </section>
 
             <script type="text/javascript" src="_js/main.js"> </script>

@@ -16,6 +16,35 @@ header a {
 	background-size: 80px 30px;
 }
 
+.red {
+        color: red;
+}
+
+.yellow {
+        color: yellow;
+}
+
+.list {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+}
+
+.lists {
+        width: 100%;
+        position: absolute;
+        top: 100;
+        display: inline-block
+}
+
+#list_doing li {
+        font-style: italic;
+}
+
+#list_todo li {
+        font-style: bold;
+}
+
 body {
 	background-color: #0078c0;
 	margin: 0px;

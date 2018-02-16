@@ -39,20 +39,31 @@ Extra Credit (4 pts):
             </header>
 
             <section>
-                <!-- create input tag for user input -->
-                <input id="todo-item-input">
+
 
                 <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+                <button class="new-item-ui" id="new-item"> ADD ITEM </button>
 
+                <!-- create input tag for user input -->
+                <input class="input" id="todo-item-input">
 
                 <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
-
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
             </section>
+            <section>
+                <div class="column"> 
+                    <h2 class=header> To Do </h2>
+                    </div>
+                <div class="column">
+                    <h2 class=header> Doing </h2>
+                     </div> 
+            </section>
+            <section>
+                <div class="column2">
+                    <div id="list_todo"> 
+                        </div>
+                </div>  
+                <div class="column2"><div id="list_doing"></div></div>     
+            </section>    
 
             <script type="text/javascript" src="_js/main.js"> </script>
     </body>

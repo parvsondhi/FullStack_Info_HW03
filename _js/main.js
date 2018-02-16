@@ -4,7 +4,7 @@ $(document).ready(
         var user_input = $('#todo-item-input').val();
         // alert(user_input);
 
-        $('#list_todo').prepend("<li> <button> Move me! </button>" + user_input + "</li>");
+        $('#list_todo').prepend("<li> <button class='circle'> &#10003 </button>" + user_input + "</li>");
     })
 );
 
@@ -12,7 +12,7 @@ $("#list_todo").on('click', "button", function() {
         // move from list_todo container to list_doing container
         // console.log($(this).parent());
 
-        $(this).html("Add To To-Do");
+        $(this).html("&#9166");
 
         var completedItem = $(this).parent()
         $("#list_doing").prepend(completedItem);
@@ -20,4 +20,14 @@ $("#list_todo").on('click', "button", function() {
 
 $("#list_doing").on('click', "button", function() {
         // move back from list_doing container to list_todo container
+});
+
+$("#list_doing").on('click', ".circle", function() {
+        // move back from list_doing container to list_todo container
+        // alert(user_input);
+        $(this).html("&#10003");
+        $(".circle").removeClass("hide");
+      
+        var completedItem = $(this).parent()
+        $("#list_todo").prepend(completedItem);
 });

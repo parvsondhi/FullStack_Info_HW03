@@ -29,6 +29,8 @@ section {
     padding: 1%
 }
 
+/*divide the list on three columns*/
+
 #container {
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -48,7 +50,7 @@ h1 {
 }
 
 #list_todo, #list_doing, #list_done {
-    height: 5em;
+    height: 2em;
 }
 
 #list_todo {
@@ -64,10 +66,12 @@ h1 {
 
 #list_done {
     background-color: #288AD6;
+    height: 100%;
     
 }
 
 
+/*make it responsive*/
 
  @media screen and (max-width: 768px) {
  body {

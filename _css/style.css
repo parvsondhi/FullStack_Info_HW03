@@ -17,8 +17,75 @@ header a {
 }
 
 body {
+    font-size:16px;
 	background-color: #0078c0;
-	margin: 0px;
+	margin: auto;
 }
 
 /* Add Your CSS */
+
+
+section {
+    padding: 1%
+}
+
+/*divide the list on three columns*/
+
+#container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+
+}
+
+h1 {
+    font-family: sans-serif serif;
+    font-size: 2em;
+}
+
+.columns {
+    height: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+    
+}
+
+#list_todo, #list_doing, #list_done {
+    height: 2em;
+}
+
+#list_todo {
+    background-color: aliceblue;
+    height: 100%;
+}
+
+#list_doing {
+    background-color: #7CBCFF;
+    height: 100%;
+
+}
+
+#list_done {
+    background-color: #288AD6;
+    height: 100%;
+    
+}
+
+
+/*make it responsive*/
+
+ @media screen and (max-width: 768px) {
+ body {
+font-size:13px;
+}
+}
+ @media screen and (max-width: 640px) {
+ body {
+font-size:11px;
+}
+}
+ @media screen and (max-width: 380px) {
+ body {
+font-size:8px;
+}
+}
+

@@ -31,6 +31,8 @@ Extra Credit (4 pts):
     <title> HW03 Javascript and jQuery </title>
     <link rel="stylesheet" href="_css/style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
 
 </head>
     <body>
@@ -43,15 +45,33 @@ Extra Credit (4 pts):
                 <input id="todo-item-input">
 
                 <!-- button takes input and adds a new element with content to 'list_do' -->
-                <button id="new-item"> Click me! </button>
+                <button id="new-item"> Add Item </button>
 
 
-                <!-- ability to move items between list_todo and list_doing -->
-                <h1> To Do </h1>
-                <div id="list_todo"> </div>
+                <!-- ability to move items between list_todo, list_doing and list_done -->
+                <div id="container">
+               
+                <!-- create three columns of tasks, enable exchange between the columns -->    
+                    <div class="columns">
+                        <h1> ToDo </h1>
+                        <div id="list_todo"> 
+                        </div>
+                    </div>
 
-                <h1> Doing </h1>
-                <div id="list_doing"> </div>
+                    
+                    <div class="columns"> 
+                    <h1> Doing </h1>
+                        <div id="list_doing"> 
+                        </div>
+                    </div>
+
+                    
+                    <div class="columns"> 
+                    <h1> Done </h1>
+                        <div id="list_done"> 
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <script type="text/javascript" src="_js/main.js"> </script>

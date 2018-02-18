@@ -22,3 +22,87 @@ body {
 }
 
 /* Add Your CSS */
+
+#new-item {
+    display: inline-block;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    height: 40px;
+}
+
+#todo-input-bar {
+	width: 100%;
+	text-align: center;
+}
+
+#todo-item-input {
+    display: inline-block;	
+    width: 30%;
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: 24;
+}
+
+#list_header {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 100%;
+	margin: 10px;
+}
+
+#list_header_todo {
+	display: inline-block;
+	background-color: lime;
+	vertical-align: top;
+	text-align: center;
+	font-family: arial;
+	width: 47%;
+	margin: 2px;
+	float: left;
+	border-style: solid;
+    border-width: 1px;
+}
+
+#list_header_doing {
+	display: inline-block;
+	background-color: orangered;
+	vertical-align: top;
+	text-align: center;
+	font-family: arial;
+	width: 47%;
+	margin: 2px;
+	float: left;
+	border-style: solid;
+    border-width: 1px;
+}
+
+#list_todo {
+	background-color: honeydew;
+	float: left;
+	font-family: arial;
+	width: 47%;
+	margin: 2px;
+	font-size: 24;
+}
+
+#list_doing {
+	background-color: lavenderblush;
+	float: left;
+	font-family: arial;
+	width: 47%;
+	margin: 2px;
+	font-size: 24;
+}
+
+li {
+	list-style: none;
+	padding: 10px;
+	border-style: solid;
+    border-width: 1px;
+}
+
+

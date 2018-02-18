@@ -20,4 +20,9 @@ $("#list_todo").on('click', "button", function() {
 
 $("#list_doing").on('click', "button", function() {
         // move back from list_doing container to list_todo container
+        $(this).html("Move me!");
+
+        var uncompletedItem = $(this).parent()
+        $("#list_todo").append(uncompletedItem);
+
 });

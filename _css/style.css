@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: "Roboto";
+	vertical-align: baseline;
+	max-width: none;
+}
+
+body{
+	/*background: linear-gradient(black, white);*/
+	background: url(".//assets/backgrounds/background_home.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+
 header {
 	background-color: #026aa7;
 	height: 30px;
@@ -20,5 +55,84 @@ body {
 	background-color: #0078c0;
 	margin: 0px;
 }
-
 /* Add Your CSS */
+
+
+
+#input{
+	margin: 20px;
+}
+
+#new-item {
+	background: none;
+	background-color: #5495ff;
+	border: 0;
+    border-radius: 0;
+    font-size: 20px;
+  	font-weight: 400;
+  	color: #e8e8e8;
+  	padding: 10px 40px;
+    width:auto;
+    height:auto;
+}
+
+input {
+	padding: 10px 40px;
+	margin-left: 20px;
+
+	background: transparent;
+    font-size: 20px;
+  	font-weight: 400;
+  	color: #e8e8e8;
+
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid gray;
+
+}
+
+section {
+	margin: 30px;
+	background-color: #e8e8e8;
+	display: inline-block;
+	width: 25%;
+	padding: 20px;
+    font-size: 25px;
+}
+
+
+
+li {
+	list-style-type: none;
+	background-color: white;
+    font-size: 15px;
+    margin: 5px;
+}
+
+button {
+	display: inline-block;
+	background:url(./todo.png) no-repeat;
+    border:none;
+    width:50px;
+    height:50px;
+    cursor:pointer;
+}
+
+.to_do {
+	background:url(./todo.png) no-repeat;}
+
+.doing {
+	background:url("./doing.png") no-repeat;
+}
+
+.done {
+	background:url("./done.png") no-repeat;
+}
+
+p {
+	display: inline-block;
+	padding-left: 5px;
+	vertical-align: top;
+    padding-top: 15px;
+}
